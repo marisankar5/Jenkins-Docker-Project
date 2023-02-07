@@ -1,6 +1,5 @@
 FROM  debian:latest
 MAINTAINER iyappankmech@gmail.com
-RUN apt install python3.8
 RUN apt install -y httpd \
 zip\
 unzip
