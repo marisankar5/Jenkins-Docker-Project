@@ -1,4 +1,4 @@
-FROM  debian:latest
+FROM  ubuntu:latest
 MAINTAINER iyappankmech@gmail.com
 RUN apt-get install -y apache2
 RUN apt-get install -y zip
