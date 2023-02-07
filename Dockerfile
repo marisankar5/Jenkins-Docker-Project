@@ -1,8 +1,8 @@
-FROM  ubuntu:latest
+FROM  ubuntu:18.04
 MAINTAINER iyappankmech@gmail.com
-RUN apt-get install -y httpd
-RUN apt-get install -y zip
-RUN apt-get install -y unzip
+RUN apt-get install -y httpd\ 
+zip\
+unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip photogenic.zip
