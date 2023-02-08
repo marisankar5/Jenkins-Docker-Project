@@ -10,7 +10,7 @@ RUN yum install -y httpd \
  unzip\
  git
 #ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
-ADD https://github.com/marisankar5/test-docker.git /var/www/html/
+#ADD https://github.com/marisankar5/test-docker.git /var/www/html/
 RUN git clone https://github.com/marisankar5/test-docker.git /var/www/html/
 WORKDIR /var/www/html/
 #RUN unzip photogenic.zip
