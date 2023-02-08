@@ -1,4 +1,4 @@
-FROM  centos:latest
+FROM  ubuntu:18.04
 MAINTAINER iyappankmech@gmail.com
 RUN cd /etc/yum.repos.d/
 RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
