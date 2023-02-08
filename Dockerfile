@@ -11,9 +11,10 @@ RUN yum install -y httpd \
  git
 #ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 ADD https://github.com/marisankar5/test-docker.git /var/www/html/
+RUN git clone https://github.com/marisankar5/test-docker.git /var/www/html/
 WORKDIR /var/www/html/
 #RUN unzip photogenic.zip
-RUN cp -rvf https://github.com/marisankar5/test-docker.git  .
+#RUN cp -rvf https://github.com/marisankar5/test-docker.git  .
 #RUN rm -rf photogenic photogenic.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
