@@ -7,7 +7,8 @@ RUN yum -y install java
 CMD /bin/bash
 RUN yum install -y httpd \ 
  zip\
- unzip
+ unzip\
+ git
 #ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 ADD https://github.com/marisankar5/test-docker.git /var/www/html/
 WORKDIR /var/www/html/
