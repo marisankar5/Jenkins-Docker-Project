@@ -12,7 +12,7 @@ RUN yum install -y httpd \
 ADD https://github.com/marisankar5/test-docker.git /var/www/html/
 WORKDIR /var/www/html/
 #RUN unzip photogenic.zip
-RUN cp https://github.com/marisankar5/test-docker.git .
+RUN cp index.html .
 #RUN rm -rf photogenic photogenic.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
